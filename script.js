@@ -37,6 +37,9 @@ const checkoutForm = document.querySelector('#checkout-form');
 const confirmation = document.querySelector('#order-confirmation');
 const confirmationCopy = document.querySelector('#confirmation-copy');
 
+// Keep the cart closed until the customer opens it.
+cartPanel.hidden = true;
+
 function openCart() {
   cartPanel.hidden = false;
   cartBackdrop.hidden = false;
