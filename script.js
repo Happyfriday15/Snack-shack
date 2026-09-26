@@ -43,6 +43,8 @@ cartPanel.hidden = true;
 function openCart() {
   cartPanel.hidden = false;
   cartBackdrop.hidden = false;
+  cartPanel.classList.add('is-open');
+  cartBackdrop.classList.add('is-visible');
   cartPanel.setAttribute('aria-hidden', 'false');
   cartToggle.setAttribute('aria-expanded', 'true');
 }
@@ -50,6 +52,8 @@ function openCart() {
 function closeCart() {
   cartPanel.hidden = true;
   cartBackdrop.hidden = true;
+  cartPanel.classList.remove('is-open');
+  cartBackdrop.classList.remove('is-visible');
   cartPanel.setAttribute('aria-hidden', 'true');
   cartToggle.setAttribute('aria-expanded', 'false');
 }

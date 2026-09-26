@@ -51,8 +51,10 @@ h3 { font-size:15px; line-height:1.25; margin:0 55px 6px 0; }
 .pickup-text strong { font-weight:700; }
 .banner-arrow { font-size:25px; margin-left:auto; }
 footer { color:#9a978d; display:flex; font-size:11px; justify-content:space-between; padding-top:48px; }
-.cart-backdrop { background:#25252266; inset:0; position:fixed; z-index:5; }
-.cart-panel { background:var(--paper); box-shadow:-20px 0 50px #2525221c; display:flex; flex-direction:column; height:100vh; max-width:410px; padding:28px; position:fixed; right:0; top:0; width:100%; z-index:6; }
+.cart-backdrop { background:#25252266; display:none; inset:0; position:fixed; z-index:5; }
+.cart-backdrop.is-visible { display:block; }
+.cart-panel { background:var(--paper); box-shadow:-20px 0 50px #2525221c; display:none; flex-direction:column; height:100vh; max-width:410px; padding:28px; position:fixed; right:0; top:0; width:100%; z-index:6; }
+.cart-panel.is-open { display:flex; }
 .cart-header { align-items:flex-start; border-bottom:1px solid var(--line); display:flex; justify-content:space-between; padding-bottom:18px; }
 .cart-header .eyebrow { margin-bottom:7px; }
 .cart-header h2 { font-size:32px; }
