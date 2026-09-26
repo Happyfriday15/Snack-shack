@@ -105,6 +105,7 @@ cartItems.addEventListener('click', (event) => {
 cartToggle.addEventListener('click', openCart);
 cartClose.addEventListener('click', closeCart);
 cartBackdrop.addEventListener('click', closeCart);
+document.querySelector('#continue-shopping').addEventListener('click', closeCart);
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape' && !cartPanel.hidden) closeCart();
 });
